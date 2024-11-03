@@ -1,0 +1,4 @@
+# Group 1
+User-agent: *
+Allow: /*.html$
+Sitemap: https://www.7eleven.com.au/sitemap.xml

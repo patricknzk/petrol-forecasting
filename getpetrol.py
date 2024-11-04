@@ -35,4 +35,4 @@ current_data = pd.read_csv('eleven-7_endeavourhills_prices.csv')
 updated_data = pd.concat([current_data, newdf], ignore_index=True)
 
 # Update csv file
-newdf.to_csv('eleven-7_endeavourhills_prices.csv')
+updated_data.to_csv('eleven-7_endeavourhills_prices.csv')

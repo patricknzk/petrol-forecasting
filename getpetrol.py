@@ -30,9 +30,10 @@ newdf = pd.DataFrame(newdf)
 
 # Get up to date csv file
 current_data = pd.read_csv('eleven-7_endeavourhills_prices.csv')
+current_data = current_data.loc[:, ~current_data.columns.str.contains('^Unnamed')] 
 
 # Update the file
 updated_data = pd.concat([current_data, newdf], ignore_index=True)
 
 # Update csv file
-updated_data.to_csv('eleven-7_endeavourhills_prices.csv')
+updated_data.to_csv('eleven-7_endeavourhills_prices.csv', index=False)

@@ -1,0 +1,19 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run getpetrol.py",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "$getpetrol.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
